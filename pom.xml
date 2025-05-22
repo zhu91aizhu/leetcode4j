@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.lmfamily</groupId>
+    <artifactId>leetcode</artifactId>
+    <version>0.1.0</version>
+    <packaging>jar</packaging>
+
+    <name>leetcode</name>
+    <description>力扣</description>
+
+    <properties>
+        <admin.version>0.1.0</admin.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>17</java.version>
+        <maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>3.27.3</version>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                    <compilerArgs>
+                        <arg>-parameters</arg>
+                    </compilerArgs>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <repositories>
+        <repository>
+            <id>aliyun</id>
+            <name>aliyun</name>
+            <url>https://maven.aliyun.com/repository/central</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </repository>
+
+        <repository>
+            <id>public</id>
+            <name>aliyun nexus</name>
+            <url>https://maven.aliyun.com/repository/public</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </repository>
+
+        <repository>
+            <id>huawei</id>
+            <name>huawei</name>
+            <url>https://mirrors.huaweicloud.com/repository/maven/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </repository>
+
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>public</id>
+            <name>aliyun nexus</name>
+            <url>https://maven.aliyun.com/repository/public</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
+
+</project>
